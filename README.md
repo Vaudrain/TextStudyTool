@@ -34,3 +34,7 @@ page. Performing more tests will extend this graph, and performing tests on mult
 add more points at each interval. Additionally, if you wish to test the email capability of the server,
 you will need to wait half a week, at which point you will receive an automated email when the
 cron job fires.
+
+## Example files
+
+There are example token sets in `Back End/Dictionaries`, and example interface schema in `User Environment/Test Environment` to alow for a quickstart.
