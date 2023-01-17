@@ -1,0 +1,111 @@
+<!-- There will be a *large* number of versions of this screen, for calibration and a variety of tests etc. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study: Devices and Interfaces - Test</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="icon" href="Sitewide Assets/logo.png">
+    <link rel="stylesheet" href="Test Environment/tests.css" type="text/css">
+    <link rel="stylesheet" href="Sitewide Assets/stylesheet.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="Test Environment/daisywheel/daisywheel.min.css">
+    <script src="Sitewide Assets/sitewide.js"></script>
+  </head>
+  <body>
+    <header>
+     <table id = "header" style="width:100%">
+       <tr>
+         <td><img id="headerimage" src="Sitewide Assets/logo.png"/></td>
+         <td><h1>Test Environment</h1></td>
+         <td></td>
+       </tr>
+     </table>
+    </header>
+    <div id="briefing">
+
+    </div>
+    <button id="startTest" onclick="startTest()">Begin Test</button><div id="countdown"></div>
+    <div class="wrapper" tabindex="1">
+        <span id="textbox" class="textbox" contentEditable="false"></span><span class="gray"></span>
+        <div class="results"></div>
+    </div>
+  </body>
+  <div id="container">
+    <ul id="keyboard">
+        <li class="symbol"><span class="off">`</span><span class="on">~</span></li>
+        <li class="symbol"><span class="off">1</span><span class="on">!</span></li>
+        <li class="symbol"><span class="off">2</span><span class="on">@</span></li>
+        <li class="symbol"><span class="off">3</span><span class="on">#</span></li>
+        <li class="symbol"><span class="off">4</span><span class="on">$</span></li>
+        <li class="symbol"><span class="off">5</span><span class="on">%</span></li>
+        <li class="symbol"><span class="off">6</span><span class="on">^</span></li>
+        <li class="symbol"><span class="off">7</span><span class="on">&amp;</span></li>
+        <li class="symbol"><span class="off">8</span><span class="on">*</span></li>
+        <li class="symbol"><span class="off">9</span><span class="on">(</span></li>
+        <li class="symbol"><span class="off">0</span><span class="on">)</span></li>
+        <li class="symbol"><span class="off">-</span><span class="on">_</span></li>
+        <li class="symbol"><span class="off">=</span><span class="on">+</span></li>
+        <li class="delete lastitem">delete</li>
+        <li class="tab">tab</li>
+        <li class="letter">q</li>
+        <li class="letter">w</li>
+        <li class="letter">e</li>
+        <li class="letter">r</li>
+        <li class="letter">t</li>
+        <li class="letter">y</li>
+        <li class="letter">u</li>
+        <li class="letter">i</li>
+        <li class="letter">o</li>
+        <li class="letter">p</li>
+        <li class="symbol"><span class="off">[</span><span class="on">{</span></li>
+        <li class="symbol"><span class="off">]</span><span class="on">}</span></li>
+        <li class="symbol lastitem"><span class="off">\</span><span class="on">|</span></li>
+        <li class="capslock">caps lock</li>
+        <li class="letter">a</li>
+        <li class="letter">s</li>
+        <li class="letter">d</li>
+        <li class="letter">f</li>
+        <li class="letter">g</li>
+        <li class="letter">h</li>
+        <li class="letter">j</li>
+        <li class="letter">k</li>
+        <li class="letter">l</li>
+        <li class="symbol"><span class="off">;</span><span class="on">:</span></li>
+        <li class="symbol"><span class="off">'</span><span class="on">&quot;</span></li>
+        <li class="return lastitem">return</li>
+        <li class="left-shift">shift</li>
+        <li class="letter">z</li>
+        <li class="letter">x</li>
+        <li class="letter">c</li>
+        <li class="letter">v</li>
+        <li class="letter">b</li>
+        <li class="letter">n</li>
+        <li class="letter">m</li>
+        <li class="symbol"><span class="off">,</span><span class="on">&lt;</span></li>
+        <li class="symbol"><span class="off">.</span><span class="on">&gt;</span></li>
+        <li class="symbol"><span class="off">/</span><span class="on">?</span></li>
+        <li class="right-shift lastitem">shift</li>
+        <li class="space lastitem">&nbsp;</li>
+    </ul>
+    <div id="ball" class="ball"></div>
+    <div id="ball2" class="ball"></div>
+    <div id="instructions">
+      
+    </div>
+</div>
+<button id="daisyWheelFocus" onclick="daisyWheelFocus()" visibility="hidden"> Click here to bring the keyboard back up.</button>
+<input class="daisywheel"/>
+<script> var daisyWheel=false,
+  discreteKeyboard=false,
+  dualKeyboard=false,
+  shift = false,
+  capslock = false;
+  keys = []; </script>
+<script src="/Test Environment/daisywheel/daisywheel.js"></script> <!-- Needs to be loaded after -->
+<script src="/Test Environment/keyboard.js"></script>
+<script src="/Test Environment/keyboard-Dual.js"></script>
+<script src="/Test Environment/keyboard-Discrete.js"></script>
+<script src="/Test Environment/tests.js"></script>
+</html>

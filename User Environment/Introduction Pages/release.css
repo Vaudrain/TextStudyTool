@@ -1,0 +1,19 @@
+#release {
+  margin: 2vw;
+}
+
+#consent {
+  font-size: 18;
+  margin: 2vw;
+}
+
+#consent input[type=checkbox] {
+  transform: scale(2);
+}
+
+#consent button {
+  margin-top: 2vh;
+  pointer-events: none;
+  filter: blur(1px) grayscale(80%);
+  opacity: 0.5;
+}

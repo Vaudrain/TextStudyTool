@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study: Devices and Interfaces - Profile</title>
+  <link rel="icon" href="/Sitewide Assets/logo.png">
+  <link rel="stylesheet" href="/Sitewide Assets/stylesheet.css" type="text/css">
+  <link rel="stylesheet" href="/Help Pages/Help.css" type="text/css">
+  <script>
+    var username = "<%= username %>";
+    var mail = "<%= mail %>"
+  </script>
+  <style media="screen">
+  #header h1, #header h2, #header h3, div {
+    text-align: center;
+  }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header> <!-- Header at top of page -->
+     <table id = "header" style="width:100%">
+       <tr>
+         <td><img id="headerimage" src="/Sitewide Assets/logo.png"/></td>
+         <td>
+          <h2>Profile</h2>
+        </td>
+         <td><button class="returnbtn" type="submit" onclick="ret()">Return</button></td>
+       </tr>
+     </table>
+    </header>
+    <div>
+      <h2>Username: <%= username %></h2>
+      <% if (mail) { %>
+        <h2>Email: <%= mail %></h2>
+      <% } else { %>
+        <h2>Email: None</h2>
+      <% } %>
+    </div>
+    <button class="accordion">Update Password</button>
+    <div class="panel">
+      <form name="update-password" action="/update-password" method="post" accept-charset="utf-8">
+        <label><b>Current Password</b></label>
+        <input type="password" placeholder="Current Password" name="password" required>
+
+        <label><b>Confirm Current Password</b></label>
+        <input type="password" placeholder="Current Password" name="passwordConf" required>
+
+        <label><b>New Password</b></label>
+        <input type="password" placeholder="New Password" name="newPassword" required>
+
+        <label><b>Confirm New Password</b></label>
+        <input type="password" placeholder="New Password" name="newPasswordConf" required>
+        <button type="submit">Submit New Password</button>
+      </form>
+    </div>
+    <button class="accordion">Update Email</button>
+    <div class="panel">
+      <form name="update-email" action="/update-email" method="post" accept-charset="utf-8">
+        <label><b>New Email</b></label>
+        <input type="email" placeholder="New Email" name="newEmail" required>
+        <label><b>Confirm New Email</b></label>
+        <input type="email" placeholder="New Email" name="newEmailConf" required>
+        <button type="submit">Submit New Email</button>
+      </form>
+      <form name="remove-email" action="/remove-email" method="post" accept-charset="utf-8">
+        <input type="checkbox" required><label> <b>Use this checkbox if you want to remove your email address.</b> </label>
+        <button type="submit">Remove Email Address</button>
+      </form>
+    </div>
+  </body>
+  <script src="Sitewide Assets/sitewide.js"></script>
+  <script src="Help Pages/Help.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</html>

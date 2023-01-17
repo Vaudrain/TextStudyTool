@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study: Devices and Interfaces - Home</title>
+  <link rel="icon" href="Sitewide Assets/logo.png">
+  <link rel="stylesheet" href="Sitewide Assets/stylesheet.css" type="text/css">
+  <link rel="stylesheet" href="Main Menu/menu.css" type="text/css">
+  <script src="Main Menu/menu.js"></script>
+  <script src="Sitewide Assets/sitewide.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header> <!-- Header at top of page -->
+     <table id = "header" style="width:100%">
+       <tr>
+         <td><img id="headerimage" src="Sitewide Assets/logo.png"/></td>
+         <td><h1>Home Page</h1></td>
+         <form name="help" action="/Help" method="get" accept-charset="utf-8">
+           <td><button class="returnbtn" type="submit">Help</button></td>
+         </form>
+       </tr>
+     </table>
+    </header>
+    <div>
+      <form action="/test" method="get" accept-charset="utf-8">
+      <button class="option" type="submit">
+        <h2>Test</h2>
+        <p>
+          Click here to participate in a test. The test should take around <b>20 minutes</b> to complete. You may particpate in as many tests as you like, but the data gathered is most helpful when you wait at least a day between tests.
+        </p>
+        <p>
+          The test is split into multiple sections, one for each input method. You will have to input "Ready!" with each new input method before you can begin. Instructions for how to type using the given input method can be seen below the interface. Please have your browser window large to ensure no issues occur.
+        </p>
+        <p>
+          Each section is split into subsections. In each subsection, you will be given a type of token to input and an onscreen prompt(for example, sentences or single words). You will be have a timer of <b>1 minute</b> for each subsection, you should input as many tokens as possible as quickly as you can while making as few mistakes as possible.
+        </p>
+        <p>
+          Results for the test will be saved periodically, but your position will not be saved. Please do not close the page until the test is complete.
+        </p>
+      </button>
+      </form>
+      <form action="/statistics" method="get" accept-charset="utf-8">
+      <button class="option" type="submit">
+        <h2>Statistics</h2>
+        <p>
+          Click here to see the results of the study so far. These results are re-calculated and updated every hour at the 45 minute mark.
+        </p>
+      </button>
+      </form>
+      <form name="profile" action="/profile" method="get" accept-charset="utf-8">
+        <button class="profile" type="submit">Profile</button>
+      </form>
+      <form name="logout" action="/logout" method="get" accept-charset="utf-8">
+        <button class="logout" type="submit">Log Out</button>
+      </form>
+    </div>
+  </body>
+</html>

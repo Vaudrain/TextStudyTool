@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study: Devices and Interfaces - Release Form</title>
+  <link rel="icon" href="Sitewide Assets/logo.png">
+  <link rel="stylesheet" href="Sitewide Assets/stylesheet.css" type="text/css">
+  <link rel="stylesheet" href="Introduction Pages/release.css" type="text/css">
+  <script src="Introduction Pages/Release Form.js"></script>
+  <script src="Sitewide Assets/sitewide.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header> <!-- Header at top of page -->
+     <table id = "header" style="width:100%">
+       <tr>
+         <td><img id="headerimage" src="Sitewide Assets/logo.png"/></td>
+         <td><h1>Release Form</h1></td>
+         <td><button class="returnbtn" type="submit" onclick="ret()">Return</button></td>
+       </tr>
+     </table>
+    </header>
+    <div id="release">
+      <p>Thank you again for your interest in this study. Please read the following carefully. This study is interested in links between types of input and the onscreen interfaces that can best take advantage of them.</p>
+
+      <p>Participation in this study is entirely voluntary. It is expected that you will have a device and browser compatible with HTML5 in order to participate. You can withdraw from the study at any point without further explanation. You may also ask that any data gathered from you be expunged from the database.</p>
+
+      <p>This experiment involves using your device with a variety of applicable interfaces to enter tokens shown onscreen. Tokens will be categorised. For each interface, you will receive a selection of tokens from each category. You should enter as many of these tokens with the given interface as quickly as possible, while avoiding mistakes. Your speed of entry and rate of mistakes will be measured. For each token category, you will have 1 minute. There will be a break before testing each new interface, to allow you to familiarise yourself with it.</p>
+
+      <p>If possible, <b>you should repeat this test multiple times</b>, leaving at least 2 days between each test. This is to measure improvement over time with moderate use.</p>
+
+      <p>All data generated as a result of your participation in this study is private and confidential. The data stored will not be personally identifiable. Depending on the results of the current study, further studies in the same area may draw upon this dataset. Upon completion of the study, the results of the study will be made public, and you will be able to (privately) compare your results to the average tester.</p>
+
+      <p>If you have any questions or concerns about this study (or would like to be informed of publications based on this study), please contact <b>Nicholas Bentley</b> at <i>nxb484@student.bham.ac.uk</i> or <b>Sandy Gould</b> at <i>s.gould@cs.bham.ac.uk</i>.</p>
+    </div>
+    <div id="consent">
+      <form name="login" action="/create-user" method="post" accept-charset="utf-8">
+      <input type="checkbox" onclick="Consent()" required><label> <b>I have read and understand the above information, and consent to the use of my information in this study.</b> </label>
+      <p>      </p>
+        <label><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="username" required>
+
+        <label><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required>
+
+        <label><b>Confirm Password</b></label>
+        <input type="password" placeholder="Confirm Password" name="passwordConf" required>
+
+        <label><b>Email Address (Optional)</b></label>
+        <input type="email" placeholder="Enter Email Address" name="email">
+
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </body>
+</html>

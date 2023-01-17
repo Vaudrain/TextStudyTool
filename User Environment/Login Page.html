@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study: Devices and Interfaces - Login</title>
+  <link rel="icon" href="Sitewide Assets/logo.png">
+  <link rel="stylesheet" href="Sitewide Assets/stylesheet.css" type="text/css">
+  <link rel="stylesheet" href="Login Page/login.css" type="text/css">
+  <script src="Login Page/login.js"></script>
+  <script src="Sitewide Assets/sitewide.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="login">
+      <div class="container">
+        <form name="login" action="/create-user" method="post" accept-charset="utf-8">
+          <table id = "filler" style="width:100%;" alt="Project Logo"><tr><img id="headerimage" src="Sitewide Assets/logo.png"/></tr></table>
+          <label><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="logname" required>
+
+          <label><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="logpassword" required>
+
+          <button class="logbtn" type="submit" ><span id='logintext'>Login</span><span id='signintext'>Sign Up</span></button>
+        </form>
+
+        <table id = "loginoptions" style="width:100%">
+          <tr>
+            <form name="signup" action="/SignUp" method="get" accept-charset="utf-8">
+              <th><button class="signbtn" type="submit">Sign Up</button></th>
+            </form>
+            <form name="forgotPassword" action="/ForgotPassword" method="get" accept-charset="utf-8">
+              <th><button class="psw" type="submit">Forgot password?</buttom></th>
+            </form>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="line" id="line"></div>
+    <div class="disclaimer">
+      <h1>A Study on Non-Standard Input Devices and Interfaces</h1>
+      <p>This project looks at the interfaces used for alphanumeric input with non-standard devices, such as TV remotes and gamepads as opposed to keyboards and touchscreens. The interfaces for these devices are often simple and wildly inefficient, and can be tedious or annoying for users to use with any significant frequency. This also hampers the design space of programs that utilise these devices. The aim of this project is to gather data about a range of input interfaces that are applicable to a range of input situations.</p>
+
+      <p>Currently, it seems that developers rarely implement anything beyond basic interfaces as there is no guiding standard or research. The end goal of this project is to be able to produce a system that is able to provide information that can be used to quantitatively decide upon the best input method for a developer to implement given a number of factors. These factors are the type and frequency of input(s), perhaps with extension to include the demographics of their users and a number of other factors. It is anticipated that developers may use this resource to implement suitable interfaces, increasing efficiency and reducing user error rates as a result.</p>
+
+      <p>Upon the conclusion of this study, the composite data gathered will be freely available for access here. If you would like to particpate in the study, please sign up using the form on this page. You do not require an email address to take part in the study, but if you do provide one you can opt to receive updates about this study.</p>
+    </div>
+  </body>
+</html>

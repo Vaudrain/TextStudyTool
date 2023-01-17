@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study: Devices and Interfaces - Introduction</title>
+  <link rel="icon" href="Sitewide Assets/logo.png">
+  <link rel="stylesheet" href="Sitewide Assets/stylesheet.css" type="text/css">
+  <link rel="stylesheet" href="Introduction Pages/Introduction.css" type="text/css">
+  </head>
+  <body>
+    <header> <!-- Header at top of page -->
+     <table id = "header" style="width:100%">
+       <tr>
+         <td><img id="headerimage" src="Sitewide Assets/logo.png"/></td>
+         <td><h1>Introduction</h1></td>
+         <td><button class="returnbtn" type="submit" onclick="ret()">Return</button></td>
+       </tr>
+     </table>
+    </header>
+    <div class="intro">
+      <h1>Introduction</h1>
+      <p>Thank you for your interest in this study. You have not yet been entered into the study. In order to participate in this study, you must have a <b>device and browser compatible with the HTML5 gamepad API</b>. Known configurations are shown here, please click the device you own below:</p>
+
+      <button class="accordion">Xbox 360 Gamepad</button>
+      <div class="panel">
+        <p>Please go to <a href="http://html5gamepad.com/">html5gamepad.com</a> and <a href=http://daisywheeljs.org/>daisywheeljs.org</a> and verify that your device is showing up and operating correctly in those two places. This study uses the same tools, so if your device does not appear there, it will not work here. If your device is showing up there, but not working here, please email <b>Nicholas Bentley</b> at <i>nxb484@student.bham.ac.uk</i> with details of your setup.</p>
+
+        <p>There are many factors that could impact the functionality of your device, a few primary factors to check are:</p>
+
+        <ul>
+          <li>Browser Compatibility - here is a list of known good browsers for this device:
+            <ul>
+              <li>Mozilla Firefox (Windows only)</li>
+              <li>Google Chrome</li>
+              <li>Opera</li>
+            </ul>
+          </li>
+          <li>Operating System Compatibility:
+            <ul>
+              <li>Windows</li>
+              <li>Linux</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <button class="accordion">Sony Dualshock 4 (wired only)</button>
+      <div class="panel">
+        <p>Please go to <a href="http://html5gamepad.com/">html5gamepad.com</a> and <a href=http://daisywheeljs.org/>daisywheeljs.org</a> and verify that your device is showing up and operating correctly in those two places. This study uses the same tools, so if your device does not appear there, it will not work here. If your device is showing up there, but not working here, please email <b>Nicholas Bentley</b> at <i>nxb484@student.bham.ac.uk</i> with details of your setup.</p>
+
+        <p>There are many factors that could impact the functionality of your device, a few primary factors to check are:</p>
+
+        <ul>
+          <li>Browser Compatibility - here is a list of known good browsers for this device:
+            <ul>
+              <li>Google Chrome</li>
+              <li>Opera</li>
+              <li>Mozilla Firefox (buggy - use other options if possible)</li>
+            </ul>
+          </li>
+          <li>Operating System Compatibility:
+            <ul>
+              <li>Windows</li>
+              <li>Linux</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <p>Other devices and browsers may also work, though they have not been tested and may therefore cause unknown behaviour. In order to determine whether or not your browser has successfully detected your input device please <a href="http://html5gamepad.com/">open this site</a> and <a href=http://daisywheeljs.org/>this site</a> in new windows/tabs and test your inputs (please note that functionality also differs from Operating System to Operating System - if something looks wrong, it probably is! If you encounter an error that you believe is the fault of this site please email <b>Nicholas Bentley</b> at <i>nxb484@student.bham.ac.uk</i>).</p>
+
+      <p> Once you are content with this, click the continue button to move on to a release form, before being taken to the study environment proper.</p>
+      <form action="/ReleaseForm" method="get">
+        <button type="submit">Continue</button>
+      </form>
+    </div>
+  </body>
+  <script src="Sitewide Assets/sitewide.js"></script>
+  <script src="Introduction Pages/Introduction.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study: Devices and Interfaces - Statistics</title>
+  <link rel="icon" href="Sitewide Assets/logo.png">
+  <link rel="stylesheet" href="Sitewide Assets/stylesheet.css" type="text/css">
+  <link rel="stylesheet" href="Statistics Page/statistics.css" type="text/css">
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="Sitewide Assets/sitewide.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <header> <!-- Header at top of page -->
+     <table id = "header" style="width:100%">
+       <tr>
+         <td><img id="headerimage" src="Sitewide Assets/logo.png"/></td>
+         <td><h1>Statistics</h1></td>
+         <td><button class="returnbtn" type="submit" onclick="ret()">Return</button></td>
+       </tr>
+     </table>
+    </header>
+    <div id="Introduction">
+      Welcome to the statistics page. Click on a button below to see all graphs related to a specific input scheme. If you don't see any buttons below, you may need to refresh this page.
+      <br/>
+      On the X axis is the number of tests completed, on the Y axis is both the Number of correct inputs per minute and the error rate as a percentage. Blue dots are the number of correct inputs per minute achieved in each test, and blue lines are the averages of this across all users on their Xth test. Red dots are the percentage error achieved in each test, and red lines are the averages across all users on their Xth test.
+      <br/>
+      The data displayed here is updated hourly, at the 45th minute.
+    </div>
+    <div id="loading">
+      <br/><br/><br/><br/>
+      STILL LOADING STATISTICS, PLEASE WAIT
+    </div>
+  </body>
+  <script src="Statistics Page/statistics.js"></script>
+</html>

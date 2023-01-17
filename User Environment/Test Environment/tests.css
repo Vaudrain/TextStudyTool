@@ -1,0 +1,143 @@
+.wrapper {
+    border: 1px solid rgb(150, 150, 150);
+    outline: 0;
+    height: 42px;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: text;
+    font-family: 'Arial';
+    font-size: 30px;
+    width: 60vw;
+    text-align:center;
+    margin:auto;
+}
+.wrapper.focused{
+    border: 1px solid rgb(102, 175, 233);
+    box-shadow: 0px 0px 10px lightblue;
+}
+.gray {
+    color: gray;
+    height: 100%;
+    position: relative;
+    z-index: -1;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    font-family: 'Lucida Console', Monaco, monospace;
+}
+.textbox {
+    outline: none;
+    display: inline-block;
+    height: 100%;
+    min-width: 1px;
+    font-family: 'Lucida Console', Monaco, monospace;
+}
+
+#instruction {
+  position: relative;
+  text-align: center;
+}
+
+#daisywheel-modal-overlay {
+  top: 10% !important;
+  transform: scale(0.8);
+}
+#daisywheel-input, .daisywheel {
+  opacity: 0 !important;
+}
+#daisywheel-modal-overlay , #daisywheel-modal-overlay::before  {
+  background: rgba(0,0,0,0) !important;
+}
+
+#countdown {
+  text-align:center;
+  margin:auto;
+  font-size: 40px;
+  font-weight: 600;
+}
+#startTest {
+  width: 40vw;
+  margin: auto;
+  display: block;
+}
+.results, #briefing {
+  text-align: center;
+}
+
+
+/** BASED ON CODE FROM https://code.tutsplus.com/tutorials/creating-a-keyboard-with-css-and-jquery--net-5774 and https://github.com/chrisdavidmills/gamepad-buttons */
+
+#container {
+  margin: 100px auto;
+  width: 688px;
+}
+#keyboard {
+  visibility: hidden;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+    #keyboard li {
+    font-family: 'Lucida Console', Monaco, monospace;
+    pointer-events: none;
+    float: left;
+    margin: 0 5px 5px 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #000;
+    border: 1px solid #f9f9f9;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    }
+        .capslock, .tab, .left-shift {
+        clear: left;
+        }
+            #keyboard .tab, #keyboard .delete {
+            width: 70px;
+            }
+            #keyboard .capslock {
+            width: 80px;
+            }
+            #keyboard .return {
+            width: 77px;
+            }
+            #keyboard .left-shift {
+            width: 95px;
+            }
+            #keyboard .right-shift {
+            width: 109px;
+            }
+        .lastitem {
+        margin-right: 0;
+        }
+        .uppercase {
+        text-transform: uppercase;
+        }
+        #keyboard .space {
+        clear: left;
+        width: 681px;
+        }
+        .on {
+        display: none;
+        }
+
+        .ball{
+          visibility: hidden;
+          width: 20px;
+          height: 20px;
+          border-radius: 20px;
+          background-image: -webkit-radial-gradient(40% 40%, circle, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));;
+          background-image: -moz-radial-gradient(40% 40%, circle, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));;
+          background-image: -ms-radial-gradient(40% 40%, circle, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));;
+          background-image: radial-gradient(circle at 40% 40%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+          position: relative;
+        }
+        #ball {
+          background-color: red;
+          float: left;
+        }
+        #ball2 {
+          background-color: purple;
+          float: right;
+        }

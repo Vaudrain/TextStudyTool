@@ -1,0 +1,17 @@
+div {
+  margin: 5%;
+}
+
+button.logout {
+  width: auto;
+  float: right;
+}
+
+button.profile {
+  width: auto;
+  float: left;
+}
+
+p {
+  text-align: left;
+}

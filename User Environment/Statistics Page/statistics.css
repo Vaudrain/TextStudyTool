@@ -1,0 +1,30 @@
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active {
+  background-color: #132693;
+}
+
+/* Style the accordion panel. hidden by default */
+.panel {
+  margin: 0 10px;
+  padding: 0 10px;
+  background-color: #313131;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s;
+  text-align: center;
+}
+
+/* Styling tooltips for stats */
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    padding: 2px;
+    font: 12px sans-serif;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+#Introduction, #loading {
+  text-align: center;
+}
